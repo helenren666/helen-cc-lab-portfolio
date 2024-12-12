@@ -8,6 +8,26 @@ body {
     line-height: 1.8;
 }
 
+p{
+    padding: 10px;
+    background-color: #ff99cc; /* 深粉色导航背景 */
+    text-align: center;
+    font-size: 1.0em;
+    color: #fff; 
+    margin-bottom: 20px;
+    text-align:center;
+    border: 2px solid #ff99cc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+p:hover {
+    color: #fff;
+    background: #ff66b2; /* 鼠标悬停变色 */
+    border-color: #cc0052;
+    transform: scale(1.05);
+}
+
+
 /* 导航栏样式 */
 nav {
     background-color: #ff99cc; /* 深粉色导航背景 */
@@ -28,13 +48,15 @@ nav a:hover {
 }
 
 /* 标题样式 */
+
 h1 {
     text-align: center;
     font-size: 2.5em;
-    color: #cc0052; /* 深粉红色标题 */
+    color: #cc0052; 
     margin-bottom: 20px;
     position: relative;
-}
+}  
+
 
 h1::after {
     content: '';
@@ -79,4 +101,12 @@ a:hover {
         padding: 8px 16px;
         max-width: 100%;
     }
+}
+
+/* 让 sketch-container1 居中 */
+#sketch-container1 {
+    display: flex; /* 启用 Flex 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    width: 100%; /* 占满宽度 */
 }
